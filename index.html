@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#160d19" />
+  <meta name="description" content="A little digital love letter: 100 heartfelt ways to say I'm sorry." />
+  <title>100 Ways to Say I'm Sorry ♡</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap');
+    :root {
+      --ink: #fff5f2;
+      --muted: #c8afb9;
+      --rose: #f4a9bb;
+      --rose-2: #dc829e;
+      --gold: #e7c69d;
+      --night: #160d19;
+      --plum: #281426;
+      --panel: rgba(255, 242, 247, .065);
+      --line: rgba(255, 220, 231, .15);
+      --serif: 'Playfair Display', Georgia, serif;
+      --sans: 'DM Sans', system-ui, sans-serif;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0; min-height: 100vh; color: var(--ink); font-family: var(--sans);
+      background: radial-gradient(ellipse at 14% 8%, rgba(130, 53, 91, .32), transparent 35%),
+                  radial-gradient(ellipse at 88% 30%, rgba(115, 57, 91, .22), transparent 34%),
+                  linear-gradient(145deg, #120b17 0%, #211222 48%, #170e1c 100%);
+      overflow-x: hidden;
+    }
+    body::before { content: ''; position: fixed; inset: 0; z-index: -1; pointer-events: none; opacity: .16;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.22'/%3E%3C/svg%3E"); }
+    a { color: inherit; }
+    button, input { font: inherit; }
+    button { cursor: pointer; }
+    .ambient { position: fixed; inset: 0; pointer-events: none; overflow: hidden; z-index: 0; }
+    .orb { position: absolute; border-radius: 50%; filter: blur(70px); opacity: .16; animation: drift 18s ease-in-out infinite alternate; }
+    .orb.one { width: 320px; height: 320px; background: #d85c87; top: 18%; left: -150px; }
+    .orb.two { width: 360px; height: 360px; background: #9b648d; right: -180px; top: 54%; animation-delay: -7s; }
+    @keyframes drift { to { transform: translate(80px, -45px) scale(1.18); } }
+    .stars { position: absolute; inset: 0; }
+    .star { position: absolute; width: 2px; height: 2px; border-radius: 50%; background: #ffe5ee; opacity: .5; animation: twinkle 3.5s ease-in-out infinite; }
+    @keyframes twinkle { 0%,100% { opacity: .12; transform: scale(.7); } 50% { opacity: .9; transform: scale(1.6); } }
+    .float-heart { position: absolute; bottom: -45px; color: #f3a5bb; opacity: 0; animation: floatUp linear forwards; text-shadow: 0 0 18px rgba(244,169,187,.5); }
+    @keyframes floatUp { 8% { opacity: .48; } 100% { transform: translateY(-115vh) rotate(28deg); opacity: 0; } }
+    .wrap { width: min(1160px, calc(100% - 44px)); margin: 0 auto; position: relative; z-index: 1; }
+    header { height: 86px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid rgba(255,255,255,.08); }
+    .brand { display: flex; gap: 10px; align-items: center; letter-spacing: .13em; text-transform: uppercase; font-size: 10px; color: #f4dce4; }
+    .brand-mark { width: 32px; height: 32px; display: grid; place-items: center; color: var(--rose); border: 1px solid rgba(244,169,187,.45); border-radius: 50%; font-size: 17px; box-shadow: 0 0 22px rgba(222,111,147,.14); }
+    .top-note { font-size: 11px; color: var(--muted); letter-spacing: .08em; }
+    .hero { min-height: 650px; display: grid; grid-template-columns: 1.05fr .95fr; align-items: center; gap: 40px; padding: 65px 0 78px; }
+    .eyebrow { color: var(--gold); text-transform: uppercase; letter-spacing: .24em; font-size: 10px; font-weight: 600; display: flex; align-items: center; gap: 12px; }
+    .eyebrow::before { content: ''; height: 1px; width: 34px; background: var(--gold); }
+    h1 { font: 500 clamp(48px, 6.2vw, 82px)/1.06 var(--serif); letter-spacing: -.045em; margin: 24px 0 22px; max-width: 650px; }
+    h1 em { color: var(--rose); font-weight: 500; }
+    .hero-copy { color: #d7c1ca; line-height: 1.8; font-size: 14px; max-width: 490px; }
+    .recipient { display: flex; align-items: center; gap: 10px; margin: 27px 0 24px; color: #c9aeb9; font-size: 12px; }
+    .recipient input { width: min(220px, 52vw); background: transparent; color: var(--ink); border: 0; border-bottom: 1px solid rgba(244,169,187,.55); border-radius: 0; padding: 8px 3px; outline: none; }
+    .recipient input::placeholder { color: #937985; }
+    .actions { display: flex; gap: 12px; flex-wrap: wrap; }
+    .btn { border: 0; border-radius: 99px; padding: 14px 22px; font-size: 11px; letter-spacing: .06em; font-weight: 700; transition: transform .25s, box-shadow .25s, background .25s; }
+    .btn:hover { transform: translateY(-3px); }
+    .btn-primary { color: #321725; background: linear-gradient(115deg, #f7c7d3, #e7b88f); box-shadow: 0 8px 30px rgba(224,136,166,.2); }
+    .btn-primary:hover { box-shadow: 0 12px 34px rgba(224,136,166,.35); }
+    .btn-ghost { color: #f1dce4; border: 1px solid rgba(255,220,231,.23); background: rgba(255,255,255,.035); }
+    .btn-ghost:hover { background: rgba(255,255,255,.09); }
+    .hero-art { min-height: 460px; display: grid; place-items: center; perspective: 1000px; position: relative; }
+    .halo { position: absolute; width: min(430px, 90%); aspect-ratio: 1; border-radius: 50%; border: 1px solid rgba(244,169,187,.13); box-shadow: 0 0 90px rgba(196,94,133,.10), inset 0 0 65px rgba(196,94,133,.06); animation: halo 9s linear infinite; }
+    .halo::before, .halo::after { content: ''; position: absolute; inset: 24px; border: 1px dashed rgba(231,198,157,.18); border-radius: 50%; }
+    .halo::after { inset: 52px; border-style: solid; opacity: .55; }
+    @keyframes halo { to { transform: rotate(360deg); } }
+    .envelope { width: min(340px, 78vw); height: 238px; position: relative; transform-style: preserve-3d; filter: drop-shadow(0 28px 40px rgba(0,0,0,.38)); animation: levitate 5.5s ease-in-out infinite; }
+    @keyframes levitate { 0%,100% { transform: translateY(0) rotateY(-8deg) rotateX(4deg); } 50% { transform: translateY(-16px) rotateY(8deg) rotateX(-2deg); } }
+    .env-back { position: absolute; inset: 0; border-radius: 12px; background: linear-gradient(145deg, #8b3f61, #50243f); border: 1px solid rgba(255,213,226,.36); }
+    .letter-peek { position: absolute; left: 8%; right: 8%; top: -46px; height: 196px; border-radius: 7px; background: linear-gradient(145deg, #fff1e9, #f0c9cf); color: #6d3b4d; display: grid; place-items: center; text-align: center; padding: 22px; box-shadow: 0 4px 16px #120b17aa; }
+    .letter-peek small { display: block; letter-spacing: .22em; font: 600 8px var(--sans); color: #a76b7f; text-transform: uppercase; }
+    .letter-peek strong { display: block; font: italic 28px var(--serif); margin: 9px 0; }
+    .letter-peek span { font: 10px var(--sans); color: #966779; }
+    .env-front { position: absolute; inset: 0; border-radius: 12px; background: linear-gradient(140deg, #a65473, #632a4a); clip-path: polygon(0 0, 50% 57%, 100% 0, 100% 100%, 0 100%); border: 1px solid rgba(255,220,231,.35); }
+    .env-flap { position: absolute; inset: 0; background: linear-gradient(145deg, #d887a0, #984765); clip-path: polygon(0 0, 100% 0, 50% 59%); transform-origin: top; animation: flap 5.5s ease-in-out infinite; }
+    @keyframes flap { 0%,100% { transform: rotateX(0); } 50% { transform: rotateX(20deg); } }
+    .seal { position: absolute; z-index: 4; width: 54px; height: 54px; left: calc(50% - 27px); top: calc(58% - 27px); border-radius: 50%; display: grid; place-items: center; background: radial-gradient(circle at 30% 25%, #f9d3db, #bd607f 75%); color: #fff0f2; border: 1px solid #f4bdc9; box-shadow: 0 3px 15px #30142588; font-size: 22px; }
+    .art-caption { position: absolute; bottom: 1px; color: #b994a3; font: italic 15px var(--serif); letter-spacing: .04em; }
+    .ticker { overflow: hidden; border-block: 1px solid rgba(255,255,255,.09); background: rgba(255,255,255,.025); }
+    .ticker-track { display: flex; width: max-content; gap: 34px; padding: 17px 0; color: #d7a7b8; letter-spacing: .24em; text-transform: uppercase; font-size: 9px; animation: ticker 32s linear infinite; }
+    .ticker-track span::after { content: '✦'; margin-left: 34px; color: var(--gold); }
+    @keyframes ticker { to { transform: translateX(-50%); } }
+    section.content { padding: 92px 0 88px; }
+    .section-head { display: flex; align-items: end; justify-content: space-between; gap: 25px; margin-bottom: 32px; }
+    .section-head h2 { font: 500 clamp(34px, 4.4vw, 53px)/1.12 var(--serif); letter-spacing: -.035em; margin: 14px 0 0; }
+    .section-head h2 em { color: var(--rose); }
+    .section-intro { color: var(--muted); max-width: 345px; font-size: 12px; line-height: 1.8; }
+    .tool-row { display: flex; gap: 12px; align-items: center; justify-content: space-between; flex-wrap: wrap; margin: 0 0 25px; }
+    .search { flex: 1 1 220px; max-width: 360px; position: relative; }
+    .search input { width: 100%; color: var(--ink); border: 1px solid var(--line); border-radius: 99px; background: rgba(255,255,255,.045); padding: 13px 17px 13px 42px; outline: 0; font-size: 11px; }
+    .search input:focus { border-color: rgba(244,169,187,.6); box-shadow: 0 0 0 3px rgba(244,169,187,.08); }
+    .search span { position: absolute; left: 16px; top: 11px; color: #ce9bac; font-size: 15px; }
+    .count { color: #bda1ad; font-size: 10px; letter-spacing: .08em; }
+    .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 13px; }
+    .sorry-card { position: relative; min-height: 166px; padding: 22px 21px 18px; border: 1px solid rgba(255,220,231,.12); border-radius: 14px; overflow: hidden; background: linear-gradient(145deg, rgba(255,255,255,.075), rgba(255,255,255,.025)); transition: transform .3s, border-color .3s, background .3s; cursor: pointer; animation: cardIn .55s both; }
+    .sorry-card::before { content: ''; position: absolute; width: 110px; height: 110px; border-radius: 50%; background: rgba(230,143,170,.09); filter: blur(28px); right: -60px; bottom: -65px; transition: transform .4s; }
+    .sorry-card:hover { transform: translateY(-5px); border-color: rgba(244,169,187,.43); background: linear-gradient(145deg, rgba(226,143,169,.13), rgba(255,255,255,.035)); }
+    .sorry-card:hover::before { transform: scale(2); }
+    @keyframes cardIn { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: translateY(0); } }
+    .card-top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 19px; }
+    .number { color: #d99bad; font: italic 17px var(--serif); }
+    .category { color: #d7bfca; background: rgba(255,255,255,.055); border: 1px solid rgba(255,255,255,.08); padding: 5px 8px; border-radius: 99px; text-transform: uppercase; font-size: 8px; letter-spacing: .12em; }
+    .card-message { position: relative; z-index: 1; color: #f5e7eb; font: 500 18px/1.42 var(--serif); }
+    .card-hint { color: #a98b98; font-size: 9px; letter-spacing: .08em; margin-top: 15px; opacity: .8; }
+    .empty { display: none; color: var(--muted); text-align: center; grid-column: 1/-1; padding: 55px 10px; border: 1px dashed var(--line); border-radius: 14px; }
+    .center { text-align: center; margin-top: 28px; }
+    .promise-section { padding: 70px 25px; border: 1px solid rgba(231,198,157,.2); border-radius: 20px; background: radial-gradient(ellipse at center, rgba(138,61,91,.22), rgba(255,255,255,.025) 65%); text-align: center; position: relative; overflow: hidden; }
+    .promise-section::before, .promise-section::after { content: '✧'; position: absolute; color: rgba(231,198,157,.5); font-size: 45px; }
+    .promise-section::before { top: 22px; left: 7%; } .promise-section::after { bottom: 18px; right: 8%; }
+    .promise-section h2 { font: 500 clamp(34px, 5vw, 54px)/1.15 var(--serif); margin: 14px 0; }
+    .promise-section h2 em { color: var(--rose); }
+    .promise-section p { color: #cbb3be; max-width: 570px; margin: 0 auto 24px; line-height: 1.8; font-size: 12px; }
+    footer { text-align: center; padding: 38px 10px 32px; border-top: 1px solid rgba(255,255,255,.08); color: #9f8491; font-size: 10px; letter-spacing: .11em; }
+    footer .made { color: #e9b4c4; font: italic 17px var(--serif); letter-spacing: .02em; margin-top: 8px; }
+    footer .credit { color: var(--gold); font-weight: 700; letter-spacing: .16em; text-transform: uppercase; font-size: 10px; margin-top: 5px; }
+    .modal { position: fixed; inset: 0; z-index: 10; display: none; place-items: center; padding: 20px; background: rgba(9,5,12,.78); backdrop-filter: blur(12px); }
+    .modal.open { display: grid; animation: fade .3s both; }
+    @keyframes fade { from { opacity: 0; } to { opacity: 1; } }
+    .letter { width: min(570px, 100%); position: relative; padding: 45px clamp(25px, 7vw, 58px); color: #603b4a; background: linear-gradient(145deg, #fff5ed, #f2d6dc); border-radius: 5px; box-shadow: 0 30px 100px #0009; text-align: center; animation: letterIn .55s cubic-bezier(.2,.8,.2,1) both; }
+    @keyframes letterIn { from { transform: translateY(24px) scale(.94) rotateX(8deg); opacity: 0; } to { transform: translateY(0) scale(1) rotateX(0); opacity: 1; } }
+    .letter::before { content: ''; position: absolute; inset: 10px; border: 1px solid rgba(160,90,113,.23); pointer-events: none; }
+    .close { position: absolute; z-index: 1; top: 18px; right: 20px; border: 0; background: transparent; color: #8c596b; font-size: 23px; }
+    .letter .tiny { color: #a76d80; text-transform: uppercase; letter-spacing: .25em; font-size: 8px; }
+    .letter h3 { font: italic 35px var(--serif); font-weight: 500; margin: 17px 0; }
+    .letter p { font: 15px/1.9 var(--serif); color: #76505d; white-space: pre-line; }
+    .letter .signature { font: italic 21px var(--serif); color: #a05270; margin-top: 25px; }
+    .letter .btn { margin-top: 12px; position: relative; z-index: 1; }
+    .toast { position: fixed; z-index: 20; bottom: 24px; left: 50%; transform: translate(-50%, 20px); opacity: 0; pointer-events: none; color: #321725; background: linear-gradient(110deg,#f7c7d3,#e7b88f); padding: 12px 20px; border-radius: 99px; font-size: 11px; font-weight: 700; box-shadow: 0 12px 35px #0005; transition: .3s; }
+    .toast.show { opacity: 1; transform: translate(-50%, 0); }
+    .scroll-top { position: fixed; bottom: 20px; right: 20px; z-index: 5; width: 38px; height: 38px; border-radius: 50%; border: 1px solid var(--line); background: rgba(29,15,29,.75); color: #f3c1cf; backdrop-filter: blur(8px); display: none; }
+    .scroll-top.visible { display: block; }
+    @media (max-width: 820px) { .hero { grid-template-columns: 1fr; padding: 70px 0 48px; gap: 10px; } .hero-art { min-height: 410px; } .hero-copy { max-width: 600px; } .grid { grid-template-columns: repeat(2,1fr); } .section-head { align-items: start; flex-direction: column; } }
+    @media (max-width: 540px) { .wrap { width: min(100% - 30px, 1160px); } header { height: 70px; } .top-note { font-size: 9px; } .hero { padding-top: 55px; min-height: 0; } h1 { font-size: clamp(47px, 13vw, 65px); } .hero-art { min-height: 340px; } .halo { width: 300px; } .envelope { transform: scale(.88); } .art-caption { bottom: -4px; } section.content { padding: 65px 0; } .grid { grid-template-columns: 1fr; gap: 10px; } .sorry-card { min-height: 138px; } .tool-row { align-items: stretch; } .search { max-width: none; flex-basis: 100%; } .count { padding-left: 7px; } .promise-section { padding: 58px 18px; } .recipient { flex-wrap: wrap; } }
+    @media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; } }
+  </style>
+</head>
+<body>
+  <div class="ambient" aria-hidden="true"><div class="orb one"></div><div class="orb two"></div><div class="stars" id="stars"></div></div>
+  <div class="wrap">
+    <header>
+      <div class="brand"><span class="brand-mark">♡</span><span>A note from the heart</span></div>
+      <div class="top-note">MADE WITH A LITTLE LOVE ✦</div>
+    </header>
+
+    <main>
+      <section class="hero" id="top">
+        <div>
+          <div class="eyebrow">A little something for you</div>
+          <h1>100 ways to say <em>I'm sorry.</em></h1>
+          <p class="hero-copy">Some words are hard to say, especially when someone means the world to you. So here are a hundred little ways to say what my heart has been trying to tell you: I'm sorry, I care, and I want to make things right.</p>
+          <div class="recipient"><span>THIS LITTLE NOTE IS FOR</span><input id="recipientName" maxlength="35" placeholder="someone special…" aria-label="Recipient's name" /></div>
+          <div class="actions">
+            <button class="btn btn-primary" id="openLetter">♡ &nbsp; OPEN YOUR LETTER</button>
+            <button class="btn btn-ghost" id="jumpWays">EXPLORE 100 WAYS &nbsp; ↓</button>
+          </div>
+        </div>
+        <div class="hero-art" aria-label="Animated romantic envelope illustration">
+          <div class="halo"></div>
+          <div class="envelope">
+            <div class="env-back"></div>
+            <div class="letter-peek"><div><small>a message from my heart</small><strong>I'm truly sorry</strong><span>With honesty, care & love</span></div></div>
+            <div class="env-front"></div><div class="env-flap"></div><div class="seal">♡</div>
+          </div>
+          <div class="art-caption">A thousand feelings. One sincere apology.</div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <div class="ticker" aria-hidden="true"><div class="ticker-track" id="tickerTrack">
+    <span>I'M SORRY</span><span>I HEAR YOU</span><span>YOU MATTER TO ME</span><span>LET ME MAKE IT RIGHT</span><span>MY HEART IS HERE</span><span>I'M SORRY</span><span>I HEAR YOU</span><span>YOU MATTER TO ME</span><span>LET ME MAKE IT RIGHT</span><span>MY HEART IS HERE</span>
+  </div></div>
+
+  <div class="wrap">
+    <section class="content" id="ways">
+      <div class="section-head">
+        <div><div class="eyebrow">One hundred little reminders</div><h2>Choose the words that<br /><em>feel like your heart.</em></h2></div>
+        <p class="section-intro">Every card is a different way to apologise. Tap any message to copy it, then send it with honesty. The most beautiful apology is the one you truly mean.</p>
+      </div>
+      <div class="tool-row">
+        <label class="search"><span>⌕</span><input type="search" id="searchInput" placeholder="Find the words you're feeling…" /></label>
+        <div class="count" id="countLabel">SHOWING 12 OF 100 HEARTFELT WORDS</div>
+      </div>
+      <div class="grid" id="sorryGrid"><div class="empty" id="emptyState">No words found. Try another search, sweetheart. ♡</div></div>
+      <div class="center"><button class="btn btn-ghost" id="showAll">REVEAL ALL 100 WAYS &nbsp; ↓</button></div>
+    </section>
+
+    <section class="promise-section">
+      <div class="eyebrow" style="justify-content:center">Beyond the words</div>
+      <h2>Let my actions say<br /><em>what words cannot.</em></h2>
+      <p>I'm not asking you to forget how you feel. I'm asking for the chance to listen, understand, learn from this, and show you through my actions that your feelings matter to me.</p>
+      <button class="btn btn-primary" id="randomSorry">♡ &nbsp; PICK A HEARTFELT APOLOGY</button>
+    </section>
+  </div>
+
+  <footer>
+    <div>MADE WITH SINCERITY, A LITTLE COURAGE & LOTS OF HEART</div>
+    <div class="made">A small reminder: you are worth making things right for.</div>
+    <div class="credit">Developed by Your ZainX</div>
+  </footer>
+
+  <div class="modal" id="letterModal" role="dialog" aria-modal="true" aria-labelledby="letterTitle">
+    <div class="letter">
+      <button class="close" id="closeLetter" aria-label="Close letter">×</button>
+      <div class="tiny">A letter I should have written sooner</div>
+      <h3 id="letterTitle">To someone special, ♡</h3>
+      <p id="letterBody">I'm sorry for the moment I made you feel hurt, unheard, or unappreciated. I won't make excuses or ask you to ignore how you feel. You matter to me, and your feelings deserve patience and respect.
+
+I may not be able to change what happened, but I can take responsibility for my part, listen to you properly, and do better. I hope my actions can slowly rebuild the trust my words alone cannot.
+
+You don't owe me an instant reply or forgiveness. I just wanted you to know that I'm genuinely sorry.</p>
+      <div class="signature" id="letterSignature">With a sincere heart ♡</div>
+      <button class="btn btn-primary" id="copyLetter">COPY THIS LETTER</button>
+    </div>
+  </div>
+  <div class="toast" id="toast" role="status">Copied with love ♡</div>
+  <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">↑</button>
+
+  <script>
+    const apologies = [
+      ["I'm truly sorry. You deserved better from me.", "Sincere"],
+      ["I was wrong, and I take responsibility for it.", "Sincere"],
+      ["Please know that hurting you was never what I wanted.", "Sincere"],
+      ["I should have listened instead of reacting. I'm sorry.", "Sincere"],
+      ["I understand that my actions hurt you, and I regret them.", "Sincere"],
+      ["No excuses. I made a mistake, and I'm owning it.", "Sincere"],
+      ["I'm sorry for not thinking about how this would affect you.", "Sincere"],
+      ["You had every right to feel the way you did. I'm sorry.", "Sincere"],
+      ["I wish I had handled things with more care.", "Sincere"],
+      ["I hear you, I understand, and I am genuinely sorry.", "Sincere"],
+      ["I won't minimise what happened. Your feelings matter.", "Sincere"],
+      ["I made the wrong choice, and I wish I could take it back.", "Sincere"],
+      ["I'm sorry for the words I chose and the pain they caused.", "Sincere"],
+      ["I should have been more thoughtful. I will learn from this.", "Sincere"],
+      ["I know an apology doesn't erase it, but I mean every word.", "Sincere"],
+      ["I accept my part in what happened. I'm sorry.", "Sincere"],
+      ["You shouldn't have had to explain why that hurt. I'm sorry.", "Sincere"],
+      ["I regret my behaviour, not just the consequences.", "Sincere"],
+      ["I am sorry for letting you down when you needed me.", "Sincere"],
+      ["I want to understand the hurt I caused, not defend it.", "Sincere"],
+      ["I'm sorry, sweetheart. I wish I could give you a gentle hug.", "Gentle"],
+      ["Can we talk when you're ready? I'll listen with an open heart.", "Gentle"],
+      ["I never want you to feel small or unimportant around me.", "Gentle"],
+      ["I miss our smiles, but I respect the space you need.", "Gentle"],
+      ["I'm sending you the softest apology and all my care.", "Gentle"],
+      ["I wish I could rewind that moment and choose kindness.", "Gentle"],
+      ["Please take your time. I am here when you're ready.", "Gentle"],
+      ["I'm sorry for making a hard day even harder.", "Gentle"],
+      ["You deserve calm, kindness, and a heartfelt apology from me.", "Gentle"],
+      ["I hope we can find a little peace after this.", "Gentle"],
+      ["I care about your heart, even when things feel difficult.", "Gentle"],
+      ["I wish I had chosen a softer way to say what I meant.", "Gentle"],
+      ["I'm sorry for the silence when you needed understanding.", "Gentle"],
+      ["You don't have to be okay right away. I understand.", "Gentle"],
+      ["I hope this message reaches you with warmth, not pressure.", "Gentle"],
+      ["Let me meet your feelings with patience this time.", "Gentle"],
+      ["I am sorry, and I am holding space for how you feel.", "Gentle"],
+      ["I wish I could make this moment feel a little lighter.", "Gentle"],
+      ["No rush to forgive me. Your peace comes first.", "Gentle"],
+      ["Here's a quiet apology, wrapped in all the care I have.", "Gentle"],
+      ["I'm sorry, my favourite person. You mean so much to me.", "Romantic"],
+      ["My heart feels heavy knowing I caused yours pain.", "Romantic"],
+      ["If I could, I'd replace that hurt with a thousand gentle smiles.", "Romantic"],
+      ["You deserve the kind of love that listens. I'm learning.", "Romantic"],
+      ["I'm sorry for forgetting to treat your heart as carefully as I should.", "Romantic"],
+      ["Even in a difficult moment, you deserve my tenderness.", "Romantic"],
+      ["I don't want pretty promises; I want to show you better love.", "Romantic"],
+      ["You are precious to me, and I am sorry I didn't show it well.", "Romantic"],
+      ["I wish my hug could say how deeply I regret hurting you.", "Romantic"],
+      ["Let me love you with more patience, honesty, and care.", "Romantic"],
+      ["I'm sorry for putting a cloud over something that should feel beautiful.", "Romantic"],
+      ["My favourite place is where we can be honest and kind to each other.", "Romantic"],
+      ["I want to be someone your heart feels safe with.", "Romantic"],
+      ["I would rather understand you than win an argument.", "Romantic"],
+      ["I'm sorry, and I still choose us—with respect and care.", "Romantic"],
+      ["You deserve thoughtful love, even when I am having a difficult day.", "Romantic"],
+      ["I hope I can turn this mistake into a reason to grow closer and wiser.", "Romantic"],
+      ["Your smile is special to me. I am sorry I interrupted it.", "Romantic"],
+      ["I want my love to feel like comfort, never like another worry.", "Romantic"],
+      ["A softer heart, a wiser me, and a sincere apology—for you.", "Romantic"],
+      ["If my words were rain, let this apology be the first clear sky.", "Poetic"],
+      ["I left a little hurt where I should have left a little kindness.", "Poetic"],
+      ["May this apology be a bridge, not a bandage over your feelings.", "Poetic"],
+      ["I cannot rewrite yesterday, but I can write tomorrow more gently.", "Poetic"],
+      ["My pride spoke too loudly; I should have let my care speak.", "Poetic"],
+      ["I hope time finds a way to soften the edges of this moment.", "Poetic"],
+      ["A thousand words cannot undo one hurt, but honesty can begin to heal.", "Poetic"],
+      ["I wish I had been a safe harbour when the day turned rough.", "Poetic"],
+      ["I am sorry for the storm I brought to your peaceful sky.", "Poetic"],
+      ["Let my next chapter be written with more thought for your heart.", "Poetic"],
+      ["Some apologies arrive late; I hope mine still arrives sincerely.", "Poetic"],
+      ["I want to replace the echo of hurt with the quiet of understanding.", "Poetic"],
+      ["My mistake was a careless moment; my regret is real and lasting.", "Poetic"],
+      ["I hope kindness finds its way back into this space between us.", "Poetic"],
+      ["If I could fold regret into a paper crane, I'd send you a skyful.", "Poetic"],
+      ["I am sorry for the page I made harder to read in our story.", "Poetic"],
+      ["May my actions become the gentle punctuation after this apology.", "Poetic"],
+      ["I cannot ask the stars to undo it, only to witness me do better.", "Poetic"],
+      ["My heart is learning the language of listening. I'm sorry.", "Poetic"],
+      ["I hope we can find a kinder rhythm from here.", "Poetic"],
+      ["I promise to listen fully before I answer.", "Promise"],
+      ["I'll be more mindful of my words and the way they land.", "Promise"],
+      ["I will not ask you to move on before you're ready.", "Promise"],
+      ["I'll work on the behaviour that caused this, not just apologise for it.", "Promise"],
+      ["I promise to make room for your feelings, even when they're hard to hear.", "Promise"],
+      ["I'll show you consistency instead of making big promises today.", "Promise"],
+      ["I will pause, think, and choose respect when emotions run high.", "Promise"],
+      ["I'll ask what you need instead of assuming I know.", "Promise"],
+      ["I promise to be honest, even when a conversation feels uncomfortable.", "Promise"],
+      ["I'll remember that being right matters less than being kind.", "Promise"],
+      ["I will take your boundaries seriously and respect your space.", "Promise"],
+      ["I'll turn this regret into a real effort to grow.", "Promise"],
+      ["I promise not to dismiss your feelings or make you repeat yourself.", "Promise"],
+      ["I'll own my mistakes without shifting the blame.", "Promise"],
+      ["I will try to understand first, instead of reacting first.", "Promise"],
+      ["I'll make the changes I can control, one day at a time.", "Promise"],
+      ["I promise my apology will be followed by thoughtful actions.", "Promise"],
+      ["I'll be more careful with the trust you place in me.", "Promise"],
+      ["I will keep learning how to show up better for you.", "Promise"],
+      ["I can't promise perfection, but I can promise accountability and effort.", "Promise"]
+    ];
+
+    const grid = document.getElementById('sorryGrid');
+    const searchInput = document.getElementById('searchInput');
+    const countLabel = document.getElementById('countLabel');
+    const showAllBtn = document.getElementById('showAll');
+    const emptyState = document.getElementById('emptyState');
+    let showingAll = false;
+    let currentList = apologies.map((item, index) => ({ text: item[0], category: item[1], number: index + 1 }));
+
+    function renderCards() {
+      const query = searchInput.value.trim().toLowerCase();
+      const filtered = currentList.filter(item => (item.text + ' ' + item.category).toLowerCase().includes(query));
+      const visible = query ? filtered : filtered.slice(0, showingAll ? 100 : 12);
+      grid.innerHTML = '';
+      visible.forEach((item, index) => {
+        const card = document.createElement('article');
+        card.className = 'sorry-card';
+        card.style.animationDelay = `${Math.min(index * 0.025, .4)}s`;
+        card.tabIndex = 0;
+        card.setAttribute('role', 'button');
+        card.setAttribute('aria-label', `Copy apology ${item.number}: ${item.text}`);
+        card.innerHTML = `<div class="card-top"><span class="number">№ ${String(item.number).padStart(2, '0')}</span><span class="category">${item.category}</span></div><div class="card-message"></div><div class="card-hint">TAP TO COPY &nbsp; ♡</div>`;
+        card.querySelector('.card-message').textContent = item.text;
+        const copy = () => copyText(item.text, 'Apology copied ♡');
+        card.addEventListener('click', copy);
+        card.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); copy(); } });
+        grid.appendChild(card);
+      });
+      emptyState.style.display = visible.length ? 'none' : 'block';
+      grid.appendChild(emptyState);
+      countLabel.textContent = query ? `FOUND ${filtered.length} OF 100 HEARTFELT WORDS` : `SHOWING ${visible.length} OF 100 HEARTFELT WORDS`;
+      showAllBtn.style.display = query || showingAll ? 'none' : 'inline-block';
+    }
+
+    function showToast(message) {
+      const toast = document.getElementById('toast');
+      toast.textContent = message;
+      toast.classList.add('show');
+      clearTimeout(showToast.timer);
+      showToast.timer = setTimeout(() => toast.classList.remove('show'), 2100);
+    }
+    async function copyText(text, message) {
+      try {
+        if (navigator.clipboard && window.isSecureContext) await navigator.clipboard.writeText(text);
+        else {
+          const area = document.createElement('textarea'); area.value = text; area.style.position = 'fixed'; area.style.opacity = '0';
+          document.body.appendChild(area); area.select();
+          const ok = document.execCommand('copy'); area.remove();
+          if (!ok) throw new Error('Copy unavailable');
+        }
+        showToast(message || 'Copied with love ♡');
+      } catch (error) { showToast('Please select and copy the message ♡'); }
+    }
+
+    searchInput.addEventListener('input', renderCards);
+    showAllBtn.addEventListener('click', () => { showingAll = true; renderCards(); });
+    document.getElementById('jumpWays').addEventListener('click', () => document.getElementById('ways').scrollIntoView({ behavior: 'smooth' }));
+
+    const modal = document.getElementById('letterModal');
+    const recipientInput = document.getElementById('recipientName');
+    function updateLetter() {
+      const name = recipientInput.value.trim();
+      document.getElementById('letterTitle').textContent = name ? `To ${name}, ♡` : 'To someone special, ♡';
+    }
+    document.getElementById('openLetter').addEventListener('click', () => { updateLetter(); modal.classList.add('open'); document.body.style.overflow = 'hidden'; });
+    function closeModal() { modal.classList.remove('open'); document.body.style.overflow = ''; }
+    document.getElementById('closeLetter').addEventListener('click', closeModal);
+    modal.addEventListener('click', e => { if (e.target === modal) closeModal(); });
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
+    document.getElementById('copyLetter').addEventListener('click', () => {
+      const title = document.getElementById('letterTitle').textContent;
+      const body = document.getElementById('letterBody').textContent.trim();
+      const signature = document.getElementById('letterSignature').textContent;
+      copyText(`${title}\n\n${body}\n\n${signature}`, 'Your letter is copied ♡');
+    });
+    document.getElementById('randomSorry').addEventListener('click', () => {
+      const item = apologies[Math.floor(Math.random() * apologies.length)];
+      copyText(item[0], 'A heartfelt apology picked & copied ♡');
+      document.getElementById('ways').scrollIntoView({ behavior: 'smooth' });
+      searchInput.value = item[1]; showingAll = true; renderCards();
+    });
+
+    // Gentle ambient stars and floating hearts; no external image or animation library needed.
+    const stars = document.getElementById('stars');
+    for (let i = 0; i < 75; i++) {
+      const star = document.createElement('i'); star.className = 'star';
+      star.style.left = `${Math.random() * 100}%`; star.style.top = `${Math.random() * 100}%`;
+      star.style.animationDelay = `${Math.random() * 4}s`; star.style.animationDuration = `${2.2 + Math.random() * 3.5}s`;
+      stars.appendChild(star);
+    }
+    function floatHeart() {
+      if (document.hidden) return;
+      const heart = document.createElement('span'); heart.className = 'float-heart';
+      heart.textContent = Math.random() > .35 ? '♡' : '✧';
+      heart.style.left = `${Math.random() * 100}%`; heart.style.fontSize = `${12 + Math.random() * 18}px`;
+      const duration = 10 + Math.random() * 9; heart.style.animationDuration = `${duration}s`;
+      document.querySelector('.ambient').appendChild(heart);
+      setTimeout(() => heart.remove(), duration * 1000 + 300);
+    }
+    setInterval(floatHeart, 1150);
+    const scrollTop = document.getElementById('scrollTop');
+    window.addEventListener('scroll', () => scrollTop.classList.toggle('visible', window.scrollY > 500), { passive: true });
+    scrollTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+
+    renderCards();
+  </script>
+</body>
+</html>
